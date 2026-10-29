@@ -1,0 +1,23 @@
+name: BrowserPlayer
+options:
+  bundleIdPrefix: com.akoniixx
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  BrowserPlayer:
+    type: application
+    platform: iOS
+    sources:
+      - BrowserPlayer
+    settings:
+      base:
+        PRODUCT_NAME: BrowserPlayer
+        PRODUCT_BUNDLE_IDENTIFIER: com.akoniixx.browserplayer
+        INFOPLIST_FILE: Support/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Support/BrowserPlayer.entitlements
+        GENERATE_INFOPLIST_FILE: NO
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+    scheme: {}
